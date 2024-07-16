@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div id="aaa">AWARD WINNING</div>
+            <div id="bbb">DIGITAL MARKETING AGENCY</div>
+            <div id="ccc">
+              Mordi sed lacus nec risus finibus feugiat et fermentum nibh.
+              Pellentesque vitae ante at elit fringilla a at purus, Morbi sed
+              lacus nec risus finibus feugiat et fermentum
+            </div>
+            <button id="contactUsButton" class="btn btn-primary">
+              Contact Us
+            </button>
+          </div>
+          <div class="col" id="heroImg">
+            <img src="hero.png" width="300" height="400" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Modal -->
+      <div class="modal" id="contactFormModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Talk to us</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="contactForm">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Contact us
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--what we do-->
+    <section>
+      <div class="container text-center">
+        <div class="row">
+          <div id="What" class="col-8">
+            <div id="aaa">WHAT WE DO</div>
+            <div id="bbb">
+              SEVICES PROVIDE <br />
+              FOR YOU
+            </div>
+            <div id="ccc">
+              Mordi sed lacus nec risus finibus feugiat et fermentum nibh.<br />
+              Pellentesque vitae ante at elit fringilla a at purus, Morbi sed
+              lacus<br />
+              nec risus finibus feugiat et fermentum
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div
+              id="whatWeDoCarousel"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="hover-overlay">
+                    <img src="1.png" alt="Slide 1" class="d-block w-100" />
+                    <div class="hover-content">
+                      <div id="rr" class="mb-2">WEB DEVELOPMENT</div>
+                      <div id="vv" class="mb-2">
+                        Morbi sed lacus nec risus finibus feugiat et fermentum
+                        nibh. Pellentesque
+                      </div>
+                      <button
+                        id="imgButton"
+                        class="btn btn-primary read-more"
+                        onclick="openInNewTab()"
+                      >
+                        Read More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="hover-overlay">
+                    <img src="2.png" alt="Slide 2" class="d-block w-100" />
+                    <div class="hover-content">
+                      <div id="rr" class="mb-2">WEB DEVELOPMENT</div>
+                      <div id="vv" class="mb-2">
+                        Morbi sed lacus nec risus finibus feugiat et fermentum
+                        nibh. Pellentesque
+                      </div>
+                      <button
+                        id="imgButton"
+                        class="btn btn-primary read-more"
+                        onclick="openInNewTab()"
+                      >
+                        Read More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="hover-overlay">
+                    <img src="3.png" alt="Slide 3" class="d-block w-100" />
+                    <div class="hover-content">
+                      <div id="rr" class="mb-2">WEB DEVELOPMENT</div>
+                      <div id="vv" class="mb-2">
+                        Morbi sed lacus nec risus finibus feugiat et fermentum
+                        nibh. Pellentesque
+                      </div>
+                      <button
+                        id="imgButton"
+                        class="btn btn-primary read-more"
+                        onclick="openInNewTab()"
+                      >
+                        Read More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#whatWeDoCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#whatWeDoCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#whatWeDoCarousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#whatWeDoCarousel" data-slide-to="1"></li>
+                <li data-target="#whatWeDoCarousel" data-slide-to="2"></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--why we are best-->
+    <section id="WhyBest">
+      <div id="xyz">OUR PROJECT</div>
+      <div id="abc">WHY WE ARE BEST</div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              id="projectImage"
+              src="1.png"
+              class="img-fluid"
+              alt="Project Image"
+            />
+          </div>
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item" data-image="1.png">
+                <p>
+                  <span id="xx">Genderless Kei - Japan's Hot</span><br />
+                  Set to launch on the manufacturer's new A330nco aireraft in
+                  2017, it's offering lots of
+                </p>
+              </li>
+              <li class="list-group-item" data-image="2.png">
+                <p>
+                  <span id="xx">Better Strategy & Quality Set</span> <br />to
+                  launch on the manufacturer's new 4330neo aircraft in 2017.
+                  it's offering lots of
+                </p>
+              </li>
+              <li class="list-group-item" data-image="3.png">
+                <p>
+                  <span id="xx">Genderless Kei - Japan's Hot</span> <br />
+                  Set to launch on the manufacturer's new A330neo aircraft in
+                  2017, it's offering lots of
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="growth">
+      <div id="xyz">EXPERTS GROWTH</div>
+      <div id="abd">OUR COMPANY GROWTH</div>
+      <div class="container" id="growth-conatiner">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card highlight-card">
+              <img src="clock (3).png" class="card-img-top" alt="Card Image" />
+              <div class="card-body">
+                <h5 class="card-title">1591+</h5>
+                <p class="card-text">Days of operation</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card highlight-card">
+              <img src="heart (2).png" class="card-img-top" alt="Card Image" />
+              <div class="card-body">
+                <h5 class="card-title">199+</h5>
+                <p class="card-text">Satisfied Customers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card highlight-card">
+              <img src="Path 4402.png" class="card-img-top" alt="Card Image" />
+              <div class="card-body">
+                <h5 class="card-title">283+</h5>
+                <p class="card-text">Complete Project</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card highlight-card">
+              <img src="Path 4406.png" class="card-img-top" alt="Card Image" />
+              <div class="card-body">
+                <h5 class="card-title">75+</h5>
+                <p class="card-text">Win Awards</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="last">
+      <div id="xyz">CLIENT'S FEEDBACK</div>
+      <div id="abd">PEOPLE SAY'S ABOUT US !</div>
+      <div id="a1">
+        Jannat Tumpa The standard chunk of lorem ipsum used since the 1500s
+        is<br />
+
+        reproduced below for those interested. Sections Bonorum et Malorum
+        original.<br />
+
+        <div id="a2">
+          JANNAT TUMPA <span id="a3">- COO, AMERIMAR ENTERPRISES,INC</span>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      function openInNewTab() {
+        window.open("https://fylehq.com", "_blank");
+      }
+    </script>
+  </body>
+</html>
